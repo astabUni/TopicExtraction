@@ -1,0 +1,129 @@
+
+\documentclass{beamer}
+
+%Initialize Packages
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{lmodern} 
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+
+
+% Code Markup
+
+\definecolor{darkviolet}{rgb}{0.5,0,0.4} 
+\definecolor{darkgreen}{rgb}{0,0.4,0.2} 
+\definecolor{darkblue}{rgb}{0.1,0.1,0.9} 
+\definecolor{darkgrey}{rgb}{0.5,0.5,0.5} 
+\definecolor{lightblue}{rgb}{0.4,0.4,1} 
+
+\lstset{ 
+   language=Scala, 
+   basicstyle=\small\ttfamily, 
+   keywordstyle=\color{darkviolet}\bfseries, 
+   commentstyle=\color{darkgreen}, 
+   stringstyle=\color{darkblue}, 
+   morecomment=[s][\color{lightblue}]{/**}{*/}, 
+   showstringspaces=false,
+   escapechar=$,
+} 
+
+\setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+
+% change theme if metropolis isn't installeds
+\usetheme{metropolis}
+
+\graphicspath{ {images/} }
+
+%Title Page Information
+\title{[ptt1819] Assignment 4 \newline
+Topic Extraction}
+\author{A. K. and A. S.} 
+\date{\today} 
+
+
+
+\begin{document}
+
+\frame{\titlepage} 
+
+
+\begin{frame}[fragile]
+   \frametitle{Approach and Expectations}
+
+      \begin{itemize}
+         \item Question: 
+         \item Hypothesis:
+      \end{itemize}
+\end{frame}
+
+% To-Do: Create Image
+
+\begin{frame}[fragile]
+	\frametitle{Overview}
+
+		\begin{enumerate}
+         \Large
+         \item WikiDump(pages\& categorylinks) - import in mysql - retrieve categories and put them in a .csv
+         \item extract relevant categories and their page id (python script - json) -  split wiki articles multistream?
+         \item LDA (scala + spark + MLlib) - preprocessing - results in graph/chart-form (pandas?, for spark - Vegas/breeze)
+   		\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[fragile]
+   \frametitle{Collect Data}
+
+      %\begin{figure}
+         %\centerline{\includegraphics[width=\paperwidth]{}}
+         %\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{Topic Modeling with LDA - Idea}
+
+		\begin{itemize}
+         \item 
+   	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+   \frametitle{Topic Modeling with LDA - Implementation}
+
+      %\begin{figure}
+         %\centerline{\includegraphics[width=\paperwidth]{}}
+         %\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+   \frametitle{Preprocessing}
+
+      %\begin{figure}
+         %\centerline{\includegraphics[width=\paperwidth]{}}
+         %\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+   \frametitle{Preliminary Results}
+
+      %\begin{figure}
+         %\centerline{\includegraphics[width=\paperwidth]{}}
+         %\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Q\&A}
+	\begin{center}
+		Questions?
+	\end{center} 
+\end{frame}
+
+
+\end{document}
