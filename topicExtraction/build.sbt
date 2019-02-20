@@ -1,3 +1,4 @@
+
 name := "topicExtraction"
 
 version := "0.1"
@@ -9,9 +10,9 @@ scalacOptions += "-target:jvm-1.8"
 libraryDependencies ++= {
 
   Seq(
-    "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2",
+    "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" exclude("org.apache.lucene" , "lucene-analyzers-common"),
     "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models",
-    //"com.google.protobuf" % "protobuf-java" % "3.2.0",
+    "com.google.protobuf" % "protobuf-java" % "3.2.0",
     // "org.apache.spark" %% "spark-mllib-local" % "2.4.0",
     "org.apache.spark" %% "spark-core" % "2.4.0",
     "org.apache.spark" %% "spark-sql" % "2.4.0",
@@ -22,3 +23,4 @@ libraryDependencies ++= {
 }
 
 dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.7.1"
+//dependencyOverrides += "org.apache.lucene" % "lucene-analyzers" % "3.5.0"
