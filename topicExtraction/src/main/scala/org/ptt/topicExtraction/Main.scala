@@ -1,72 +1,66 @@
 package org.ptt.topicExtraction
 
-import com.databricks.spark.xml._
-import org.apache.spark.ml.clustering.LDA
-import org.apache.spark.ml.feature.CountVectorizerModel
-import org.apache.spark.sql.functions.udf
-import org.apache.spark.sql.{SparkSession, functions}
+
+import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.types.{StringType, StructField, StructType}
+
+import scala.collection.mutable.{ArrayBuffer, WrappedArray}
+
 
 object Main {
 
+  val InputLocation = "src/main/resources/in/"
+  val OutputLocation = "src/main/resources/out/"
+
+
   def main(args: Array[String]): Unit = {
+
+    val articlesSchema = StructType(Seq(StructField("id", StringType, true),
+      StructField("text", StringType, true),
+      StructField("title", StringType, true),
+      StructField("url", StringType, true)))
 
 
     // init spark
     val spark = SparkSession
       .builder
       .master("local[8]")
-      .appName( "BasicLDAPipeline" )
+      .appName( "Domain Exploration" )
+      .config("spark.eventLog.enabled", "true")
+      .config("spark.eventLog.dir", "src/main/resources/out/log/")
       .getOrCreate()
 
 
-    // ingest data
-    val df = spark.read
-      .option( "rowTag", "page" )
-      .option("excludeAttribute", true)
-      .xml( "src/main/resources/articleTest.xml" )
-      .select( "text")
-
-    // pos-tagging & noun counting
     import spark.implicits._
-    val nouns = df
-      .select(functions.explode(CoreNLPImpl.ssplit('text)).as('sentence))
-      .select(functions.explode(CoreNLPImpl.tokenize('sentence)).as('tokens))
-      .withColumn("pos", CoreNLPImpl.pos('tokens))
-      .select('tokens,functions.explode('pos).as('tags))
-      .filter($"tags".like("NN"))
-      .groupBy("tokens").count()
-    nouns.show()
+    // ingest data
+    val jsonDF = spark.read.schema(articlesSchema)
+      .json(InputLocation+"articles-d6.json")
+      //.repartition(16).toDF()
+      .select("id","text", "title").cache()
+
+    val catLDA: ArrayBuffer[DataFrame] = new ArrayBuffer[DataFrame]()
+    //val catTest = jsonDF.filter(jsonDF("id").isin(60525,369456,397905,440644,764616,776343,776818,907940,1604940,3212696,3593094,3898076,3906549,4589953,4591058,4596063,4597051,4601056,4601803,5051859,5142649,7343721,7463271,7898037,12314938,12740151,13418501,13764323,13869651,16316920,16317014,16341329,16400024,16430047,16435372,16729930,17689921,18823880,21772137,23028629,24096813,24164712,25087061,25839957,27277284,30442608,31122048,32011253,32068321,34841174,39848741,43922705,44302090,45292535,49924727,52137353,54185422,55569888,57420523,59237611))
 
 
-
-    // preprocess
-    val startPreProcessTime = System.nanoTime()
-    val (feature, model) = Preprocessing.preprocess(df)
-    feature.cache()
-    val elapsedPreProcessTime = (System.nanoTime() - startPreProcessTime) / 1e9
-    println(s"\t PreProcessing time: $elapsedPreProcessTime sec")
+    // Category: ArticleIDs
+    val catArticleIDs = spark.read.json(InputLocation+"category_to_articleids-d6.json").cache()
 
 
-    // run LDA and pretty print results
-    val startLDATime = System.nanoTime()
-    val ldaModel = new LDA()
-      .setK( 10 )
-      .setMaxIter( 10 )
-      .setTopicConcentration(0.1)
-      .setDocConcentration(0.1)
-      .fit(feature)//.setOptimizer("em")
-    val topics = ldaModel.describeTopics( 5 )
-    val vocList = for {v <- model.stages(3).asInstanceOf[CountVectorizerModel].vocabulary} yield v
-    val UDFconvertWords = udf( (array: collection.mutable.WrappedArray[Int]) => array.map( element => vocList( element ) ) )
-    val results = topics.withColumn( "terms", UDFconvertWords( topics( "termIndices" ) ) )
-    results.show(false)
-    val elapsedLDATime = (System.nanoTime() - startPreProcessTime) / 1e9
-    println(s"\t LDA time: $elapsedLDATime sec")
+    catArticleIDs.columns.foreach(cat => {
+
+      val articleIDs = catArticleIDs.select("`"+cat+"`").first().getAs[WrappedArray[String]](0)
+
+      val tempDF = jsonDF.filter($"id".isin(articleIDs:_*))//.select("id","filtered").show(60)
+
+      val (feature, model) = Preprocessing.preprocess(tempDF)
+      feature.cache()
+      catLDA.append( ApplyLDA.applyLDA(feature))
+      feature.unpersist()
+
+    })
 
 
-
-    // cosine similarity between categories
-
+    for (elem <- catLDA) {elem.show(false)}
 
 
     spark.close()

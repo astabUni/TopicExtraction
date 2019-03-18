@@ -8,4 +8,6 @@ target
 out
 
 .DS_Store
-.xml
+*.xml
+*.json
+*.csv
