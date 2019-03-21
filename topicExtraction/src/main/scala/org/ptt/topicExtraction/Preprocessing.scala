@@ -9,7 +9,7 @@ import org.apache.spark.sql.DataFrame
 object Preprocessing {
 
 
-  def preprocess(document: DataFrame): (DataFrame, PipelineModel)= {
+  def preprocess(document: DataFrame): (DataFrame)= {
 
 
     val regexTokenizer = new RegexTokenizer()
@@ -32,7 +32,7 @@ object Preprocessing {
       .setOutputCol( "filtered" )
       .setCaseSensitive( false )
     // customize list of stopwords
-    swRemover.setStopWords(swRemover.getStopWords ++ Array("com", "ref", "use", "rrb", "lrb"))
+    swRemover.setStopWords(swRemover.getStopWords ++ Array("use", "rrb", "lrb"))
 
 
     val pipeline = new Pipeline()
@@ -42,7 +42,7 @@ object Preprocessing {
     val resultDoc = model.transform(document)
 
 
-    (resultDoc, model)
+    (resultDoc)
 
   }
 
