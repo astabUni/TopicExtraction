@@ -16,6 +16,7 @@ with open(RESOURCES_PATH + "\Computer_hardware_category_to_depth-d2.json",
           encoding="utf-8") as f:
     cat_to_depth = json.load(f)
 
+# TODO: use real topics
 placeholder_topics = "Topic 1, Topic 2, Topic 3, Topic 4, Topic 5"
 
 
@@ -43,7 +44,6 @@ nodes = []
 for cat, subcats in cat_to_subcat.items():
     nodes.append((cat, placeholder_topics))
 
-
 # Create nodes
 for (category, placeholder_topics) in nodes:
     d = cat_to_depth[category] + 1
@@ -54,18 +54,10 @@ for (category, placeholder_topics) in nodes:
            shape="circle", style="filled", penwidth="2.0", fontname="Arial Bold",
 		   fontsize=str(48 * scaling), fixedsize="true", width=str(13 * scaling))
 
-# g.node_attr.update(color="black", fillcolor="lightblue", shape="circle",
-#                    style="filled", penwidth="2.0")
-
 # Create edges
-edges = []
 for cat, subcats in cat_to_subcat.items():
     for subcat in subcats:
-        #edges.append((cat, subcat))
         g.edge(cat, subcat)
-
-for (node1, node2) in edges:
-    g.edge(node1, node2)
 
 g.edge_attr.update(weight="0.5", penwidth="2", ranksep="0.5", minlen="2.5")
 
