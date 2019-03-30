@@ -9,7 +9,6 @@ scalacOptions += "-target:jvm-1.8"
 
 
 libraryDependencies ++= {
-
   Seq(
     "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2",
     "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models",
@@ -17,7 +16,6 @@ libraryDependencies ++= {
     "org.apache.spark" %% "spark-core" % "2.4.0",
     "org.apache.spark" %% "spark-sql" % "2.4.0",
     "org.apache.spark" %% "spark-mllib" % "2.4.0"
-
   )
 }
 

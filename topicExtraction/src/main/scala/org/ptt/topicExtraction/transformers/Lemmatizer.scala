@@ -1,4 +1,4 @@
-package org.ptt.topicExtraction
+package org.ptt.topicExtraction.transformers
 
 import edu.stanford.nlp.simple.Sentence
 import org.apache.spark.ml.UnaryTransformer
@@ -7,12 +7,12 @@ import org.apache.spark.ml.util.{DefaultParamsReadable, DefaultParamsWritable, I
 import org.apache.spark.sql.types.{ArrayType, DataType, StringType}
 
 import scala.collection.JavaConverters._
-import scala.collection.{Seq, mutable}
+import scala.collection.Seq
 
 
 
 
-class UnaryLemmatizer(override val uid: String) extends UnaryTransformer[Seq[String], Seq[String], UnaryLemmatizer] with DefaultParamsWritable{
+class Lemmatizer(override val uid: String) extends UnaryTransformer[Seq[String], Seq[String], Lemmatizer] with DefaultParamsWritable{
 
   def this() = this(Identifiable.randomUID("lemma"))
 
@@ -25,11 +25,11 @@ class UnaryLemmatizer(override val uid: String) extends UnaryTransformer[Seq[Str
 
   override protected def outputDataType: DataType = new ArrayType(StringType, false)
 
-  override def copy(extra: ParamMap): UnaryLemmatizer = defaultCopy(extra)
+  override def copy(extra: ParamMap): Lemmatizer = defaultCopy(extra)
 
 }
 
-object UnaryLemmatizer extends DefaultParamsReadable[UnaryLemmatizer] {
+object Lemmatizer extends DefaultParamsReadable[Lemmatizer] {
 
-  override def load(path: String): UnaryLemmatizer = super.load(path)
+  override def load(path: String): Lemmatizer = super.load(path)
 }
