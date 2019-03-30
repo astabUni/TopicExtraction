@@ -19,8 +19,8 @@ class POSTagger(override val uid: String) extends UnaryTransformer[Seq[String], 
 
   override protected def createTransformFunc: Seq[String] => Seq[String] = { arrayStr =>
     val posTags = arrayStr.flatMap(str => new Sentence(str).posTags().asScala)
-    val filterTags = List("NN", "NNS", "NNP", "NNPS")
-    val nouns = (arrayStr zip posTags).filter(w => filterTags.toSet.contains(w._2)).map(_._1).toList
+    val filterTags = List("NN","NNS", "NNP", "NNPS")
+    val nouns = (arrayStr zip posTags).filter(w => filterTags.toSet.contains(w._2)).map(_._1.toLowerCase).toList
     //val test = (arrayStr zip posTags).map(_._1).groupBy(identity).mapValues(_.size)
     nouns
   }

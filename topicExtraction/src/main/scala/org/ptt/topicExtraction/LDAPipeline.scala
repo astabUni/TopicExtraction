@@ -35,7 +35,7 @@ object LDAPipeline {
 
 
     cachedCVectors.unpersist()
-    (resultLDA, ldaModel.transform(cachedCVectors))
+    (resultLDA, ldaModel.transform(cachedCVectors).select("id", "topicDistribution"))
 
   }
 

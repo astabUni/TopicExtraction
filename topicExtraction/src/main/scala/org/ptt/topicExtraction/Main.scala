@@ -20,6 +20,29 @@ object Main {
   val TopicDistributionLDA: mutable.HashMap[String, DataFrame] = mutable.HashMap.empty[String, DataFrame]
 
 
+  def writeToJson(path: String): Unit = {
+
+    FileUtils.deleteDirectory(new File(OutputLocation + path))
+
+    for ((cat, df) <- CatResult) {
+      df.write
+        .option("header", "true")
+        .option("inferSchema", "true")
+        .json(OutputLocation + path + cat)
+    }
+
+    if (path.matches("lda/")) {
+      for ((cat, df) <- TopicDistributionLDA) {
+        df.write
+          .option("header", "true")
+          .option("inferSchema", "true")
+          .json(OutputLocation + path + cat + "/topicDistribution")
+      }
+    }
+
+  }
+
+
   def countNouns(articles: DataFrame, catArticleIDs: DataFrame, sparkSesh: SparkSession): Unit = {
 
     import sparkSesh.implicits._
@@ -44,15 +67,7 @@ object Main {
     })
     preprocessed.unpersist()
 
-    // write to CSV -> move to separate method
-    FileUtils.deleteDirectory(new File(OutputLocation + "nouns"))
-
-    for ((cat, df) <- CatResult) {
-      df.write
-        .option("header", "true")
-        .option("inferSchema", "true")
-        .csv(OutputLocation + "nouns/" + cat)
-    }
+    writeToJson("nouns/")
 
   }
 
@@ -79,27 +94,7 @@ object Main {
     })
     preprocessed.unpersist()
 
-
-
-
-    FileUtils.deleteDirectory(new File(OutputLocation + "lda/topics"))
-
-    for ((cat, df) <- CatResult) {
-      df.write
-        .option("header", "true")
-        .option("inferSchema", "true")
-        .json(OutputLocation + "lda/topics/" + cat)
-    }
-
-    FileUtils.deleteDirectory(new File(OutputLocation + "lda/topicDistribution"))
-
-    for ((cat, df) <- TopicDistributionLDA) {
-      df.write
-        .option("header", "true")
-        .option("inferSchema", "true")
-        .json(OutputLocation + "lda/topicDistribution/" + cat)
-    }
-
+    writeToJson("lda/")
 
   }
 
@@ -133,8 +128,7 @@ object Main {
     // Category: ArticleIDs
     val catArticleIDs = spark.read.json(InputLocation + "d2/Computer_hardware_category_to_articleids-d2.json").cache()
 
-
-    //countNouns(articlesDF, catArticleIDs, spark)
+    countNouns(catTest, catArticleIDs, spark)
     runLDA(catTest, catArticleIDs, spark)
 
 
