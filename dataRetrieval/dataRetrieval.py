@@ -11,6 +11,7 @@ import time
 # User inputs
 FILENAME_CSV = "categorylinkspage-join.csv"
 FILENAME_ARTICLES_XML = "enwiki-20190101-pages-articles-multistream.xml"
+#FILENAME_ARTICLES_XML = "articles-d1.xml"
 ROOTS = ["Computer_hardware"]
 MAXDEPTH = 2
 
@@ -18,7 +19,7 @@ MAXDEPTH = 2
 RESOURCES_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)),
                               "resources")
 OUTPUT_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                           "output", "articles-d" + str(MAXDEPTH))
+                           "output")
 
 if not os.path.isdir(OUTPUT_PATH):
     try:
@@ -36,7 +37,8 @@ INPUT_FILEPATH_ARTICLES_XML_BZ2 = os.path.join(RESOURCES_PATH,
 
 # Set output file paths
 FILEPATH_ARTICLEID_TITLE_CAT_CSV = os.path.join(RESOURCES_PATH,
-                                                "articles_" + FILENAME_CSV + \
+                                                "articles_" +
+                                                FILENAME_CSV.split(".")[0] + \
                                                 ".csv")
 FILEPATH_CAT_TO_SUBCATS_FULL_JSON = os.path.join(RESOURCES_PATH,
                                                  "categories_" +
