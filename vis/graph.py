@@ -6,6 +6,7 @@ import json
 RESOURCES_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)))
 
 FILEPATH_GRAPH = os.path.join(RESOURCES_PATH, "data.gv")
+MAXDEPTH = 2
 
 with open(RESOURCES_PATH + "\Computer_hardware_categorylinks-d2.json", "r",
           encoding="utf-8") as f:
@@ -29,36 +30,30 @@ def linebreak(str, maxlength):
             newstr += s + " "
             linelength += len(s) + 1
         else:
-            newstr += s + "\n"
-            linelength = 0
+            newstr += "\n" + s + " "
+            linelength = len(s) + 1
     return newstr.strip()
 
 
 g = Digraph(filename='data.gv', engine="sfdp", format="png")
-g.attr(overlap="false", repulsiveforce="10", splines="spline",
-       layout="neato", sep="+40,40")
-
-nodes = []
-
-# Collect nodes to create
-for cat, subcats in cat_to_subcat.items():
-    nodes.append((cat, placeholder_topics))
+g.attr(overlap="false", splines="polyline", layout="neato", sep="+50,50")
+colors = {0: "#8aacb8",  1: "#add8e6", 2: "#d6ebf2"}
 
 # Create nodes
-for (category, placeholder_topics) in nodes:
-    d = cat_to_depth[category] + 1
-    # scaling = 2.5 / (d*d)
-    scaling = 1 / (3*d)
-    g.node(category, label=linebreak(category, 25) + "\n\n" + linebreak(
-        placeholder_topics, 25), color="black", fillcolor="lightblue",
-           shape="circle", style="filled", penwidth="2.0", fontname="Arial Bold",
-		   fontsize=str(48 * scaling), fixedsize="true", width=str(13 * scaling))
+for category, depth in cat_to_depth.items():
+    if (depth <= MAXDEPTH):
+        scaling = 1 / (4*(depth+1))
+        g.node(category, fillcolor=colors[depth])
+        g.node(category, label=linebreak(category, 27) + "\n\n" + linebreak(
+            placeholder_topics, 27), color="black", shape="circle",
+               style="filled", penwidth="2.0", fontname="Arial Bold",
+               fontsize=str(128 * scaling),
+               fixedsize="true", width=str(26.5 * scaling))
 
 # Create edges
 for cat, subcats in cat_to_subcat.items():
     for subcat in subcats:
         g.edge(cat, subcat)
 
-g.edge_attr.update(weight="0.5", penwidth="2", ranksep="0.5", minlen="2.5")
-
+g.edge_attr.update(weight="0.5", penwidth="2.0", ranksep="0.5")
 g.view()
