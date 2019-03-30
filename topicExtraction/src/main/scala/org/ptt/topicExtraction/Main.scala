@@ -26,7 +26,7 @@ object Main {
 
     // preprocess articles
     val preprocessed = Preprocessing.preprocess(articles, "posTags").cache()
-    preprocessed.foreachPartition(x => {}) /
+    preprocessed.foreachPartition(x => {})
 
 
     // count nouns for each category
@@ -80,13 +80,15 @@ object Main {
     preprocessed.unpersist()
 
 
+
+
     FileUtils.deleteDirectory(new File(OutputLocation + "lda/topics"))
 
     for ((cat, df) <- CatResult) {
       df.write
         .option("header", "true")
         .option("inferSchema", "true")
-        .csv(OutputLocation + "lda/topics/" + cat)
+        .json(OutputLocation + "lda/topics/" + cat)
     }
 
     FileUtils.deleteDirectory(new File(OutputLocation + "lda/topicDistribution"))
@@ -95,7 +97,7 @@ object Main {
       df.write
         .option("header", "true")
         .option("inferSchema", "true")
-        .csv(OutputLocation + "lda/topicDistribution/" + cat)
+        .json(OutputLocation + "lda/topicDistribution/" + cat)
     }
 
 
@@ -132,8 +134,8 @@ object Main {
     val catArticleIDs = spark.read.json(InputLocation + "d2/Computer_hardware_category_to_articleids-d2.json").cache()
 
 
-    countNouns(articlesDF, catArticleIDs, spark)
-    //runLDA(catTest, catArticleIDs, spark)
+    //countNouns(articlesDF, catArticleIDs, spark)
+    runLDA(catTest, catArticleIDs, spark)
 
 
     spark.close()

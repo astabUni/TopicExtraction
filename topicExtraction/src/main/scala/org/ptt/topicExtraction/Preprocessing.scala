@@ -38,7 +38,7 @@ object Preprocessing {
 
 
     val nouns = Array(regexTokenizer, posTags, swRemover)
-    val lda =  Array(regexTokenizer, lemmas, swRemover)
+    val lda =  Array(regexTokenizer, posTags, lemmas, swRemover)
 
 
     val pipeline = new Pipeline()
