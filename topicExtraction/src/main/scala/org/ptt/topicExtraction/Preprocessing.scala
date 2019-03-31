@@ -24,6 +24,7 @@ object Preprocessing {
       .setInputCol("tokens")
       .setOutputCol("lemma")
 
+
     val posTags = new POSTagger()
       .setInputCol("lemma")
       .setOutputCol("posTags")
@@ -39,12 +40,13 @@ object Preprocessing {
     swRemover.setStopWords(swRemover.getStopWords ++ Array("use", "rrb", "lrb"))
 
 
-    val nouns = Array(regexTokenizer, lemmas, posTags , swRemover)
+    val nouns = Array(regexTokenizer, lemmas, posTags, swRemover)
     val lda = Array(regexTokenizer, lemmas, swRemover)
 
 
     val pipeline = new Pipeline()
       .setStages(if (swInputCol.matches("posTags")) nouns else lda)
+
 
     val model = pipeline.fit(document)
     val resultDoc = model.transform(document)
