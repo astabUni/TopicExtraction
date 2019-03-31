@@ -17,15 +17,26 @@ object Main {
   val InputLocation = "src/main/resources/in/"
   val OutputLocation = "src/main/resources/out/"
   val ArticleLocation = InputLocation + "AA/wiki_00"
-  val ArticleIDLocation = InputLocation + "category_to_articleids-d1.json"
+  val ArticleIDLocation = InputLocation + "category_to_articleids.json"
   val CatResult: mutable.HashMap[String, DataFrame] = mutable.HashMap.empty[String, DataFrame]
   val TopicDistributionLDA: mutable.HashMap[String, DataFrame] = mutable.HashMap.empty[String, DataFrame]
 
 
-  def writeToJson(path: String): Unit = {
+  def writeToFile(path: String): Unit = {
 
     FileUtils.deleteDirectory(new File(OutputLocation + path))
 
+    if (path.matches("nouns/")) {
+      for ((cat, df) <- CatResult) {
+        df.write
+          .option("header", "true")
+          .option("inferSchema", "true")
+          .csv(OutputLocation + path + cat)
+      }
+    }
+
+
+    if (path.matches("lda/")) {
     for ((cat, df) <- CatResult) {
       df.coalesce(1).write.mode("append")
         .option("header", "true")
@@ -33,7 +44,6 @@ object Main {
         .json(OutputLocation + path + cat)
     }
 
-    if (path.matches("lda/")) {
       for ((cat, df) <- TopicDistributionLDA) {
         df.coalesce(1).write.mode("append")
           .option("header", "true")
@@ -69,7 +79,7 @@ object Main {
     })
     preprocessed.unpersist()
 
-    writeToJson("nouns/")
+    writeToFile("nouns/")
 
   }
 
@@ -88,7 +98,7 @@ object Main {
       val articleIDs = catArticleIDs.select("`" + cat + "`").first().getAs[mutable.WrappedArray[String]](0)
       val tempDF = preprocessed.filter($"id".isin(articleIDs: _*))
 
-      if ((!tempDF.head(1).isEmpty)) {
+      if (!tempDF.head(1).isEmpty) {
         val (lda, cVector) = LDAPipeline.applyLDA(tempDF)
         CatResult += (cat -> lda)
         TopicDistributionLDA += (cat -> cVector)
@@ -96,7 +106,7 @@ object Main {
     })
     preprocessed.unpersist()
 
-    writeToJson("lda/")
+    writeToFile("lda/")
 
   }
 
@@ -130,8 +140,8 @@ object Main {
     // Category: ArticleIDs
     val catArticleIDs = spark.read.json(ArticleIDLocation).cache()
 
-    countNouns(articlesDF, catArticleIDs, spark)
-    runLDA(articlesDF, catArticleIDs, spark)
+    countNouns(catTest, catArticleIDs, spark)
+    runLDA(catTest, catArticleIDs, spark)
 
 
     spark.close()

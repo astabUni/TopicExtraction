@@ -2,9 +2,15 @@
 
 ## Prerequisites
 
-* Scala IDE (IntelliJ, Eclipse with Scala plugin)
+* Scala IDE (IntelliJ IDEA or Eclipse with Scala plugin)
 
 
 ## Usage
 
-* Import 
+Navigate to topicExtraction
+
+> cd topicExtraction
+
+* Import this folder according to your chosen Scala IDE
+* Build the project
+* Run Main.scala
