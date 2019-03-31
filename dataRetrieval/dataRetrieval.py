@@ -11,9 +11,8 @@ import time
 # User inputs
 FILENAME_CSV = "categorylinkspage-join.csv"
 FILENAME_ARTICLES_XML = "enwiki-20190101-pages-articles-multistream.xml"
-#FILENAME_ARTICLES_XML = "articles-d1.xml"
 ROOTS = ["Computer_hardware"]
-MAXDEPTH = 2
+MAXDEPTH = 5
 
 # Create paths
 RESOURCES_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)),
@@ -44,16 +43,10 @@ FILEPATH_CAT_TO_SUBCATS_FULL_JSON = os.path.join(RESOURCES_PATH,
                                                  "categories_" +
                                                  FILENAME_CSV.split(".")[0] + \
                                                  ".json")
-FILEPATH_CAT_TO_DEPTH = os.path.join(OUTPUT_PATH, "category_to_depth-d" + str(
-    MAXDEPTH))
-FILEPATH_CAT_TO_SUBCATS = os.path.join(OUTPUT_PATH,
-                                       "categorylinks-d" + str(MAXDEPTH))
+FILEPATH_CAT_TO_DEPTH = os.path.join(OUTPUT_PATH, "category_to_depth")
+FILEPATH_CAT_TO_SUBCATS = os.path.join(OUTPUT_PATH, "categorylinks")
 FILEPATH_CAT_TO_ARTICLEIDS = os.path.join(OUTPUT_PATH,
-                                          "category_to_articleids-d" + str(
-                                              MAXDEPTH))
-FILEPATH_CAT_TO_ARTICLEIDS_COLLECTED = os.path.join(OUTPUT_PATH,
-                                                    "category_to_articleids_collected-d" + str(
-                                                        MAXDEPTH))
+                                                    "category_to_articleids")
 
 
 def printTime(start, end):
@@ -84,7 +77,7 @@ def clean_text(text):
 
 
 def save_as_csv(dict, filepath):
-    with open(filepath, "w", encoding="latin-1") as csv_file:
+    with open(filepath, "w", encoding="utf-8") as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=",", lineterminator="\n",
                                quoting=csv.QUOTE_ALL)
         for k, vs in dict.items():
@@ -153,7 +146,6 @@ def getcategorydepths(cat_to_subcats, roots, maxdepth):
             print("Category \'%s\' not found" % cat)
     if len(cat_depth) == 0:
         return cat_depth
-    #cat_depth[roots] = 0
     while not queue.empty():
         (d, category) = queue.get()
         if d >= maxdepth:
@@ -306,8 +298,8 @@ def dict_values_to_set(dict):
 
 
 def main():
-    # Extract relevant information from .csv dump, otherwise load
-    # category to subcategory dict
+    # Extract relevant information from .csv dump or load
+    # category to subcategory dict if files already exist
     if not (os.path.isfile(FILEPATH_ARTICLEID_TITLE_CAT_CSV) and
             os.path.isfile(
                 FILEPATH_CAT_TO_SUBCATS_FULL_JSON)):
@@ -334,16 +326,9 @@ def main():
     # save_as_csv(cat_to_subcats, FILEPATH_CAT_TO_SUBCATS + ".csv")
 
     # Collect article ids for wanted categories
-    if not os.path.isfile(FILEPATH_CAT_TO_ARTICLEIDS + ".json"):
-        cat_to_articleids = articleid_collector(
-            FILEPATH_ARTICLEID_TITLE_CAT_CSV,
-            cat_to_depth)
-        save_as_json(cat_to_articleids, FILEPATH_CAT_TO_ARTICLEIDS + ".json")
-        # save_as_csv(cat_to_articleids, FILEPATH_CAT_TO_ARTICLEIDS + ".csv")
-    else:
-        with open(FILEPATH_CAT_TO_ARTICLEIDS + ".json", "r") as f:
-            print("\nLoading article ids")
-            cat_to_articleids = json.load(f)
+    cat_to_articleids = articleid_collector(
+        FILEPATH_ARTICLEID_TITLE_CAT_CSV, cat_to_depth)
+
     cat_to_depth.clear()
     cat_to_subcats.clear()
 
@@ -359,12 +344,13 @@ def main():
     cat_to_articleids_collected = removeuncollected(cat_to_articleids,
                                                     articleids_collected)
     save_as_json(cat_to_articleids_collected, FILEPATH_CAT_TO_ARTICLEIDS +
-                 "_collected.json")
+                 ".json")
     # save_as_csv(cat_to_articleids_collected, FILEPATH_CAT_TO_ARTICLEIDS +
     #             "_collected.json")
 
     print("%s unique articleIDs found" % len(articleids))
-    print("%s articles found and extracted" % len(articleids_collected))
+    print("%s matching articles found and extracted" % len(
+        articleids_collected))
 
 
 if __name__ == "__main__":
