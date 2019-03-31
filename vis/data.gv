@@ -1,879 +1,870 @@
 digraph {
 	edge [penwidth=2.0 ranksep=0.5 weight=0.5]
-	layout=neato overlap=false sep="+50,50" splines=polyline
+	layout=neato overlap=false sep="+70,70" splines=polyline
 	"Computer hardware" [fillcolor="#8aacb8"]
 	"Computer hardware" [label="Computer hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=32.0 penwidth=2.0 shape=circle style=filled width=6.625]
+computer, hardware, cache, 
+system, memory" color=black fixedsize=true fontname="Arial Bold" fontsize=32.0 penwidth=2.0 shape=circle style=filled width=6.625]
 	"Computer hardware companies" [fillcolor="#add8e6"]
 	"Computer hardware companies" [label="Computer hardware 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
-	"Benchmarks (computing)" [fillcolor="#add8e6"]
-	"Benchmarks (computing)" [label="Benchmarks (computing)
+company, product, 
+computer, apple, system" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+	"Benchmarks computing" [fillcolor="#add8e6"]
+	"Benchmarks computing" [label="Benchmarks computing
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+benchmark, performance, 
+system, test, computer" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware stubs" [fillcolor="#add8e6"]
 	"Computer hardware stubs" [label="Computer hardware stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+computer, system, 
+processor, memory, datum" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Classes of computers" [fillcolor="#add8e6"]
 	"Classes of computers" [label="Classes of computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
-	"Computer hardware logos" [fillcolor="#add8e6"]
-	"Computer hardware logos" [label="Computer hardware logos
-
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+computer, quantum, system, 
+processor, laptop" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Hardware bugs" [fillcolor="#add8e6"]
 	"Hardware bugs" [label="Hardware bugs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+processor, intel, memory, 
+codice, _" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"History of computing hardware" [fillcolor="#add8e6"]
 	"History of computing hardware" [label="History of computing 
 hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+computer, ibm, system, 
+design, first" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware tuning" [fillcolor="#add8e6"]
 	"Computer hardware tuning" [label="Computer hardware tuning
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+power, system, voltage, 
+processor, clock" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Clock signal" [fillcolor="#add8e6"]
 	"Clock signal" [label="Clock signal
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+clock, circuit, signal, 
+datum, processor" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware researchers" [fillcolor="#add8e6"]
 	"Computer hardware researchers" [label="Computer hardware 
 researchers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+computer, game, award, 
+university, research" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware by company" [fillcolor="#add8e6"]
 	"Computer hardware by company" [label="Computer hardware by 
 company
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+player, video, feature, 
+model, archo" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Lists of computer hardware" [fillcolor="#add8e6"]
 	"Lists of computer hardware" [label="Lists of computer hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+computer, spectrum, clone, 
+chipset, system" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Hardware virtualization" [fillcolor="#add8e6"]
 	"Hardware virtualization" [label="Hardware virtualization
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+virtualization, appliance, 
+file, system, machine" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware standards" [fillcolor="#add8e6"]
 	"Computer hardware standards" [label="Computer hardware 
 standards
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+standard, interface, 
+system, device, datum" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Hardware in Linux" [fillcolor="#add8e6"]
 	"Hardware in Linux" [label="Hardware in Linux
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+linux, system, device, 
+command, codice" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Hardware partitioning" [fillcolor="#add8e6"]
 	"Hardware partitioning" [label="Hardware partitioning
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+system, partition, domain, 
+lpar, network" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Computer hardware by type" [fillcolor="#add8e6"]
 	"Computer hardware by type" [label="Computer hardware by type
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+kvm, keyboard, display, 
+design, processor" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	"Hardware acceleration" [fillcolor="#add8e6"]
 	"Hardware acceleration" [label="Hardware acceleration
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
+sound, hardware, card, 
+design, chip" color=black fixedsize=true fontname="Arial Bold" fontsize=16.0 penwidth=2.0 shape=circle style=filled width=3.3125]
 	Minicomputers [fillcolor="#d6ebf2"]
 	Minicomputers [label="Minicomputers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, computer, bit, 
+pdp, memory" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Microcomputers [fillcolor="#d6ebf2"]
 	Microcomputers [label="Microcomputers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, system, bit, 
+model, processor" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Embedded systems" [fillcolor="#d6ebf2"]
 	"Embedded systems" [label="Embedded systems
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, fuel, software, 
+control, device" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mainframe computers" [fillcolor="#d6ebf2"]
 	"Mainframe computers" [label="Mainframe computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, computer, cdc, 
+memory, bit" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Supercomputers [fillcolor="#d6ebf2"]
 	Supercomputers [label="Supercomputers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, computer, 
+processor, supercomputer, 
+memory" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Avionics computers" [fillcolor="#d6ebf2"]
 	"Avionics computers" [label="Avionics computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, argus, radiation, 
+software, computer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Military computers" [fillcolor="#d6ebf2"]
 	"Military computers" [label="Military computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, computer, control, 
+target, range" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Early computers" [fillcolor="#d6ebf2"]
 	"Early computers" [label="Early computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, machine, memory, 
+system, dragon" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"One-of-a-kind computers" [fillcolor="#d6ebf2"]
 	"One-of-a-kind computers" [label="One-of-a-kind computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, machine, watson, 
+design, memory" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Reconfigurable computing" [fillcolor="#d6ebf2"]
 	"Reconfigurable computing" [label="Reconfigurable computing
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+fpga, company, array, 
+processor, reconfigurable" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Analog computers" [fillcolor="#d6ebf2"]
 	"Analog computers" [label="Analog computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, scale, system, 
+machine, astrolabe" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mobile computers" [fillcolor="#d6ebf2"]
 	"Mobile computers" [label="Mobile computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+device, computer, system, 
+pda, tegra" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Massively parallel computers" [fillcolor="#d6ebf2"]
 	"Massively parallel computers" [label="Massively parallel 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, machine, 
+processor, parallel, node" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Fault-tolerant computer systems" [fillcolor="#d6ebf2"]
 	"Fault-tolerant computer systems" [label="Fault-tolerant computer 
 systems
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Servers (computing)" [fillcolor="#d6ebf2"]
-	"Servers (computing)" [label="Servers (computing)
+system, cluster, failure, 
+datum, error" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"Servers computing" [fillcolor="#d6ebf2"]
+	"Servers computing" [label="Servers computing
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+server, datum, client, 
+system, network" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Human computers" [fillcolor="#d6ebf2"]
 	"Human computers" [label="Human computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, work, woman, 
+finley, nasa" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Classes of mobile computers" [fillcolor="#d6ebf2"]
 	"Classes of mobile computers" [label="Classes of mobile 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+keyboard, feature, device, 
+laptop, detachable" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Ternary computers" [fillcolor="#d6ebf2"]
 	"Ternary computers" [label="Ternary computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+logic, state, number, 
+computer, radix" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Smart devices" [fillcolor="#d6ebf2"]
 	"Smart devices" [label="Smart devices
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+thermostat, gun, energy, 
+toy, technology" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Guidance computers" [fillcolor="#d6ebf2"]
 	"Guidance computers" [label="Guidance computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+memory, computer, 
+instruction, agc, system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Quantum computing" [fillcolor="#d6ebf2"]
 	"Quantum computing" [label="Quantum computing
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+quantum, feynman, formula, 
+qubit, state" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Magnetic Core Memory computers" [fillcolor="#d6ebf2"]
 	"Magnetic Core Memory computers" [label="Magnetic Core Memory 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+ibm, memory, card, 
+address, program" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Variable word length computers" [fillcolor="#d6ebf2"]
 	"Variable word length computers" [label="Variable word length 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+ibm, memory, character, 
+address, 1401" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"12-bit computers" [fillcolor="#d6ebf2"]
 	"12-bit computers" [label="12-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+instruction, bit, pdp, 
+memory, computer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"18-bit computers" [fillcolor="#d6ebf2"]
 	"18-bit computers" [label="18-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+pdp, system, computer, 
+bit, ibm" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"36-bit computers" [fillcolor="#d6ebf2"]
 	"36-bit computers" [label="36-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, bit, memory, pdp, 
+computer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Vector supercomputers" [fillcolor="#d6ebf2"]
 	"Vector supercomputers" [label="Vector supercomputers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cray, vector, processor, 
+system, memory" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Decimal computers" [fillcolor="#d6ebf2"]
 	"Decimal computers" [label="Decimal computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+ibm, memory, computer, 
+digit, character" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"16-bit computers" [fillcolor="#d6ebf2"]
 	"16-bit computers" [label="16-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+honeywell, computer, 
+system, model, 316" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"60-bit computers" [fillcolor="#d6ebf2"]
 	"60-bit computers" [label="60-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cdc, instruction, 
+processor, bit, 6600" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"24-bit computers" [fillcolor="#d6ebf2"]
 	"24-bit computers" [label="24-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cdc, bit, system, 
+computer, 1604" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"48-bit computers" [fillcolor="#d6ebf2"]
 	"48-bit computers" [label="48-bit computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cdc, bit, system, 1604, 
+3000" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"DEC hardware" [fillcolor="#d6ebf2"]
 	"DEC hardware" [label="DEC hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, pdp, model, 
+memory, drive" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Nintendo hardware" [fillcolor="#d6ebf2"]
 	"Nintendo hardware" [label="Nintendo hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+game, nintendo, super, 
+boy, disc" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Hewlett-Packard products" [fillcolor="#d6ebf2"]
 	"Hewlett-Packard products" [label="Hewlett-Packard products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, model, network, 
+series, service" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Sega hardware" [fillcolor="#d6ebf2"]
 	"Sega hardware" [label="Sega hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+sega, game, release, 
+dreamcast, system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Acorn Computers" [fillcolor="#d6ebf2"]
 	"Acorn Computers" [label="Acorn Computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+acorn, computer, bbc, 
+system, arm" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Cisco products" [fillcolor="#d6ebf2"]
 	"Cisco products" [label="Cisco products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+switch, cisco, system, 
+card, chassis" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"CBM hardware" [fillcolor="#d6ebf2"]
 	"CBM hardware" [label="CBM hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+commodore, drive, disk, 
+computer, mouse" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"CDC hardware" [fillcolor="#d6ebf2"]
 	"CDC hardware" [label="CDC hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cdc, system, instruction, 
+bit, memory" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Creative Technology Limited products" [fillcolor="#d6ebf2"]
 	"Creative Technology Limited products" [label="Creative Technology 
 Limited products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+sound, blaster, card, 
+audio, muvo" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Gateway hardware" [fillcolor="#d6ebf2"]
 	"Gateway hardware" [label="Gateway hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+key, keyboard, macro, 
+program, anykey" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Toshiba brands" [fillcolor="#d6ebf2"]
 	"Toshiba brands" [label="Toshiba brands
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+toshiba, ocz, 
+westinghouse, smartmedia, 
+card" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"UNIVAC hardware" [fillcolor="#d6ebf2"]
 	"UNIVAC hardware" [label="UNIVAC hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+tape, univac, datum, 
+computer, bit" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Sun Microsystems hardware" [fillcolor="#d6ebf2"]
 	"Sun Microsystems hardware" [label="Sun Microsystems hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+sun, system, processor, 
+ray, architecture" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Sony hardware" [fillcolor="#d6ebf2"]
 	"Sony hardware" [label="Sony hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+disc, ray, blu, dvd, 
+format" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Advanced Micro Devices products" [fillcolor="#d6ebf2"]
 	"Advanced Micro Devices products" [label="Advanced Micro Devices 
 products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Apple Inc. hardware" [fillcolor="#d6ebf2"]
-	"Apple Inc. hardware" [label="Apple Inc. hardware
+amd, support, processor, 
+memory, library" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"Apple Inc hardware" [fillcolor="#d6ebf2"]
+	"Apple Inc hardware" [label="Apple Inc hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+apple, system, macintosh, 
+computer, mac" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Parallax products" [fillcolor="#d6ebf2"]
 	"Parallax products" [label="Parallax products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+propeller, parallax, 
+program, stamp, basic" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Dell hardware" [fillcolor="#d6ebf2"]
 	"Dell hardware" [label="Dell hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+switch, dell, port, 
+server, series" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Scientific Data Systems computers" [fillcolor="#d6ebf2"]
 	"Scientific Data Systems computers" [label="Scientific Data Systems 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, bit, memory, 
+address, sd" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Soviet computer systems" [fillcolor="#d6ebf2"]
 	"Soviet computer systems" [label="Soviet computer systems
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, system, 
+instrument, imp, design" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Sinclair computers and derivatives" [fillcolor="#d6ebf2"]
 	"Sinclair computers and derivatives" [label="Sinclair computers and 
 derivatives
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+zx81, sinclair, computer, 
+zx80, machine" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Nortel products" [fillcolor="#d6ebf2"]
 	"Nortel products" [label="Nortel products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, switch, nortel, 
+line, mss" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Microsoft hardware" [fillcolor="#d6ebf2"]
 	"Microsoft hardware" [label="Microsoft hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+microsoft, lumia, phone, 
+nokia, jazz" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Intel products" [fillcolor="#d6ebf2"]
 	"Intel products" [label="Intel products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+intel, processor, system, 
+support, chipset" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Acer products" [fillcolor="#d6ebf2"]
 	"Acer products" [label="Acer products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+acer, model, tablet, 
+webplayer, aspire" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	EMachines [fillcolor="#d6ebf2"]
 	EMachines [label="EMachines
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, eone, emachine, 
+acquire, imac" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"NEC hardware" [fillcolor="#d6ebf2"]
 	"NEC hardware" [label="NEC hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+riscstation, base, mips, 
+nec, support" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"IBM computers" [fillcolor="#d6ebf2"]
 	"IBM computers" [label="IBM computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+ibm, system, computer, 
+ssec, mark" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Samsung computers" [fillcolor="#d6ebf2"]
 	"Samsung computers" [label="Samsung computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+book, ativ, samsung, 
+device, nexus" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Avaya products" [fillcolor="#d6ebf2"]
 	"Avaya products" [label="Avaya products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+switch, port, network, 
+ers, stack" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Honeywell computers" [fillcolor="#d6ebf2"]
 	"Honeywell computers" [label="Honeywell computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+honeywell, computer, 
+system, dp, processor" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Texas Instruments hardware" [fillcolor="#d6ebf2"]
 	"Texas Instruments hardware" [label="Texas Instruments hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+missile, part, bit, 
+javelin, target" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Sharp Corporation computers" [fillcolor="#d6ebf2"]
 	"Sharp Corporation computers" [label="Sharp Corporation 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+series, zaurus, model, 
+card, sharp" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Pakistan Aeronautical Complex products" [fillcolor="#d6ebf2"]
 	"Pakistan Aeronautical Complex products" [label="Pakistan Aeronautical 
 Complex products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+pac, pad, pakistan, 
+takhtus, develop" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Asus products" [fillcolor="#d6ebf2"]
 	"Asus products" [label="Asus products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+asus, zenbook, model, 
+tablet, eee" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Cray products" [fillcolor="#d6ebf2"]
 	"Cray products" [label="Cray products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cray, processor, system, 
+memory, datum" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Atari hardware" [fillcolor="#d6ebf2"]
 	"Atari hardware" [label="Atari hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, joystick, design, 
+stick, atarus" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Olivetti computers" [fillcolor="#d6ebf2"]
 	"Olivetti computers" [label="Olivetti computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, card, drive, 
+machine, instruction" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"LG computers" [fillcolor="#d6ebf2"]
 	"LG computers" [label="LG computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+pad, optimus, release, 
+android, camera" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"SanDisk products" [fillcolor="#d6ebf2"]
 	"SanDisk products" [label="SanDisk products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+player, sansa, clip, 
+sandisk, drive" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Microchip Technology hardware" [fillcolor="#d6ebf2"]
 	"Microchip Technology hardware" [label="Microchip Technology 
 hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+device, pic, microchip, 
+bit, support" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Nvidia products" [fillcolor="#d6ebf2"]
 	"Nvidia products" [label="Nvidia products
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+nvidia, tegra, shield, 
+support, game" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Xerox computers" [fillcolor="#d6ebf2"]
 	"Xerox computers" [label="Xerox computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"AT&T computers" [fillcolor="#d6ebf2"]
-	"AT&T computers" [label="AT&T computers
+xerox, system, computer, 
+bit, time" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"ATT computers" [fillcolor="#d6ebf2"]
+	"ATT computers" [label="ATT computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Ministry of the Electronics Industry (USSR) computers" [fillcolor="#d6ebf2"]
-	"Ministry of the Electronics Industry (USSR) computers" [label="Ministry of the 
-Electronics Industry 
-(USSR) computers
+system, design, memory, 
+computer, instruction" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"Ministry of the Electronics Industry USSR computers" [fillcolor="#d6ebf2"]
+	"Ministry of the Electronics Industry USSR computers" [label="Ministry of the 
+Electronics Industry USSR 
+computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Ministry of Radio Industry (USSR) computers" [fillcolor="#d6ebf2"]
-	"Ministry of Radio Industry (USSR) computers" [label="Ministry of Radio Industry 
-(USSR) computers
+model, computer, bit, kib, 
+electronika" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"Ministry of Radio Industry USSR computers" [fillcolor="#d6ebf2"]
+	"Ministry of Radio Industry USSR computers" [label="Ministry of Radio Industry 
+USSR computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, vector, minsk, 
+agat, bit" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Google hardware" [fillcolor="#d6ebf2"]
 	"Google hardware" [label="Google hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+google, device, pixel, 
+glass, nest" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Amazon hardware" [fillcolor="#d6ebf2"]
 	"Amazon hardware" [label="Amazon hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+amazon, kindle, fire, 
+device, release" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer data storage" [fillcolor="#d6ebf2"]
 	"Computer data storage" [label="Computer data storage
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+storage, datum, disk, 
+drive, system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Microprocessors [fillcolor="#d6ebf2"]
 	Microprocessors [label="Microprocessors
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+instruction, bit, 
+processor, chip, design" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Microcontrollers [fillcolor="#d6ebf2"]
 	Microcontrollers [label="Microcontrollers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+bit, instruction, 
+register, address, board" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer memory" [fillcolor="#d6ebf2"]
 	"Computer memory" [label="Computer memory
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+memory, datum, bit, cache, 
+system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer buses" [fillcolor="#d6ebf2"]
 	"Computer buses" [label="Computer buses
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+bus, datum, system, 
+device, standard" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Power supplies" [fillcolor="#d6ebf2"]
 	"Power supplies" [label="Power supplies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+power, voltage, supply, 
+supplies, frequency" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Motherboard [fillcolor="#d6ebf2"]
 	Motherboard [label="Motherboard
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+bus, system, capacitor, 
+card, electrolyte" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Networking hardware" [fillcolor="#d6ebf2"]
 	"Networking hardware" [label="Networking hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+network, device, switch, 
+datum, system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Graphics hardware" [fillcolor="#d6ebf2"]
 	"Graphics hardware" [label="Graphics hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+rate, display, video, 
+driver, card" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer peripherals" [fillcolor="#d6ebf2"]
 	"Computer peripherals" [label="Computer peripherals
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+device, computer, system, 
+drive, time" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computing output devices" [fillcolor="#d6ebf2"]
 	"Computing output devices" [label="Computing output devices
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+color, palette, display, 
+bit, image" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer hardware cooling" [fillcolor="#d6ebf2"]
 	"Computer hardware cooling" [label="Computer hardware cooling
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+heat, cool, fan, air, 
+arctic" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Central processing unit" [fillcolor="#d6ebf2"]
 	"Central processing unit" [label="Central processing unit
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+instruction, processor, 
+cpu, computer, bit" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer enclosure" [fillcolor="#d6ebf2"]
 	"Computer enclosure" [label="Computer enclosure
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+case, rack, computer, 
+chassis, equipment" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Video game hardware" [fillcolor="#d6ebf2"]
 	"Video game hardware" [label="Video game hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+game, v60, system, 
+playstation, development" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer real-time clocks" [fillcolor="#d6ebf2"]
 	"Computer real-time clocks" [label="Computer real-time clocks
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+time, system, clock, 
+computer, card" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Proprietary hardware" [fillcolor="#d6ebf2"]
 	"Proprietary hardware" [label="Proprietary hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+kindle, amazon, device, 
+book, user" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Graphics processing units" [fillcolor="#d6ebf2"]
 	"Graphics processing units" [label="Graphics processing units
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+support, chip, series, 
+core, graphic" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer hardware clones" [fillcolor="#d6ebf2"]
 	"Computer hardware clones" [label="Computer hardware clones
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+clone, list, sinclair, 
+super, computer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Open-source hardware" [fillcolor="#d6ebf2"]
 	"Open-source hardware" [label="Open-source hardware
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+source, hardware, design, 
+software, launch" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Home computer hardware companies" [fillcolor="#d6ebf2"]
 	"Home computer hardware companies" [label="Home computer hardware 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+apple, company, computer, 
+dell, product" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Defunct computer hardware companies" [fillcolor="#d6ebf2"]
 	"Defunct computer hardware companies" [label="Defunct computer hardware 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, computer, system, 
+product, market" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Fabless semiconductor companies" [fillcolor="#d6ebf2"]
 	"Fabless semiconductor companies" [label="Fabless semiconductor 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, technology, 
+product, chip, processor" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mihajlo Pupin Institute" [fillcolor="#d6ebf2"]
 	"Mihajlo Pupin Institute" [label="Mihajlo Pupin Institute
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"EI NiÅ¡" [fillcolor="#d6ebf2"]
-	"EI NiÅ¡" [label="EI NiÅ¡
-
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, rajko, tomovi, 
+institute, cer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Networking hardware companies" [fillcolor="#d6ebf2"]
 	"Networking hardware companies" [label="Networking hardware 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, network, product, 
+apple, technology" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer storage companies" [fillcolor="#d6ebf2"]
 	"Computer storage companies" [label="Computer storage companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, storage, product, 
+datum, system" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer enclosure companies" [fillcolor="#d6ebf2"]
 	"Computer enclosure companies" [label="Computer enclosure 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, company, 
+product, case, asus" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Motherboard companies" [fillcolor="#d6ebf2"]
 	"Motherboard companies" [label="Motherboard companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+intel, company, 
+motherboard, product, 
+computer" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer peripheral companies" [fillcolor="#d6ebf2"]
 	"Computer peripheral companies" [label="Computer peripheral 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, samsung, product, 
+technology, include" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer memory companies" [fillcolor="#d6ebf2"]
 	"Computer memory companies" [label="Computer memory companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, memory, samsung, 
+technology, product" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Fujitsu [fillcolor="#d6ebf2"]
 	Fujitsu [label="Fujitsu
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+fujitsu, patent, system, 
+court, service" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Advanced Micro Devices" [fillcolor="#d6ebf2"]
 	"Advanced Micro Devices" [label="Advanced Micro Devices
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+amd, processor, intel, 
+technology, ati" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Foundry semiconductor companies" [fillcolor="#d6ebf2"]
 	"Foundry semiconductor companies" [label="Foundry semiconductor 
 companies
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, intel, ibm, 
+samsung, semiconductor" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Lenovo [fillcolor="#d6ebf2"]
 	Lenovo [label="Lenovo
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+lenovo, desktop, 
+smartphone, market, 
+experiment" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Asus [fillcolor="#d6ebf2"]
 	Asus [label="Asus
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+asus, series, computer, 
+company, release" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"NEC Corporation" [fillcolor="#d6ebf2"]
 	"NEC Corporation" [label="NEC Corporation
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+nec, japan, system, 
+company, cup" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Teradata [fillcolor="#d6ebf2"]
 	Teradata [label="Teradata
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+datum, teradata, company, 
+hurd, software" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Netbook manufacturers" [fillcolor="#d6ebf2"]
 	"Netbook manufacturers" [label="Netbook manufacturers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+company, lenovo, computer, 
+dell, sony" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer power supply unit manufacturers" [fillcolor="#d6ebf2"]
 	"Computer power supply unit manufacturers" [label="Computer power supply unit 
 manufacturers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Acer Inc." [fillcolor="#d6ebf2"]
-	"Acer Inc." [label="Acer Inc.
+ocz, power, watt, 
+computer, company" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+	"Acer Inc" [fillcolor="#d6ebf2"]
+	"Acer Inc" [label="Acer Inc
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+acer, company, birkin, 
+team, value" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Vaio [fillcolor="#d6ebf2"]
 	Vaio [label="Vaio
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+vaio, sony, series, model, 
+also" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	Cray [fillcolor="#d6ebf2"]
 	Cray [label="Cray
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+cray, system, 
+supercomputer, titan, 
+upgrade" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	MediaTek [fillcolor="#d6ebf2"]
 	MediaTek [label="MediaTek
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+mediatek, ralink, chip, 
+soc, chipset" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"ARM Holdings" [fillcolor="#d6ebf2"]
 	"ARM Holdings" [label="ARM Holdings
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+arm, company, processor, 
+design, include" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Quanta Computer" [fillcolor="#d6ebf2"]
 	"Quanta Computer" [label="Quanta Computer
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+quanta, court, product, 
+patent, laptop" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Rainbow Books" [fillcolor="#d6ebf2"]
 	"Rainbow Books" [label="Rainbow Books
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+disc, audio, datum, rom, 
+book" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"MIDI standards" [fillcolor="#d6ebf2"]
 	"MIDI standards" [label="MIDI standards
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+midi, sound, message, 
+standard, format" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer display standards" [fillcolor="#d6ebf2"]
 	"Computer display standards" [label="Computer display standards
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+color, display, mode, 
+pixel, video" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"PICMG standards" [fillcolor="#d6ebf2"]
 	"PICMG standards" [label="PICMG standards
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+compactpci, picmg, serial, 
+connector, standard" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Microcomputer stubs" [fillcolor="#d6ebf2"]
 	"Microcomputer stubs" [label="Microcomputer stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, system, 
+processor, bit, register" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer graphics stubs" [fillcolor="#d6ebf2"]
 	"Computer graphics stubs" [label="Computer graphics stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+computer, display, 
+texture, video, _" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mobile computer stubs" [fillcolor="#d6ebf2"]
 	"Mobile computer stubs" [label="Mobile computer stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+device, palm, phone, 
+feature, model" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Video game hardware stubs" [fillcolor="#d6ebf2"]
 	"Video game hardware stubs" [label="Video game hardware stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+game, system, arcade, 
+board, console" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mainframe computer stubs" [fillcolor="#d6ebf2"]
 	"Mainframe computer stubs" [label="Mainframe computer stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+ibm, system, computer, 
+program, bit" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Minicomputer stubs" [fillcolor="#d6ebf2"]
 	"Minicomputer stubs" [label="Minicomputer stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+system, pdp, bit, 
+computer, bus" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer storage stubs" [fillcolor="#d6ebf2"]
 	"Computer storage stubs" [label="Computer storage stubs
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+file, datum, disk, drive, 
+storage" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"AI accelerators" [fillcolor="#d6ebf2"]
 	"AI accelerators" [label="AI accelerators
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+drive, chip, system, base, 
+accelerator" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Linux drivers" [fillcolor="#d6ebf2"]
 	"Linux drivers" [label="Linux drivers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+driver, support, linux, 
+device, software" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Disk partitions" [fillcolor="#d6ebf2"]
 	"Disk partitions" [label="Disk partitions
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+partition, boot, system, 
+disk, mbr" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Video game platform emulators" [fillcolor="#d6ebf2"]
 	"Video game platform emulators" [label="Video game platform 
 emulators
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+game, console, nintendo, 
+virtual, release" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Storage virtualization" [fillcolor="#d6ebf2"]
 	"Storage virtualization" [label="Storage virtualization
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+storage, disk, 
+virtualization, datum, 
+device" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mechanical calculators" [fillcolor="#d6ebf2"]
 	"Mechanical calculators" [label="Mechanical calculators
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+machine, number, 
+calculator, century, jeton" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Programmable calculators" [fillcolor="#d6ebf2"]
 	"Programmable calculators" [label="Programmable calculators
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+calculator, ibm, wang, 
+program, machine" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Electro-mechanical computers" [fillcolor="#d6ebf2"]
 	"Electro-mechanical computers" [label="Electro-mechanical 
 computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+bombe, rotor, computer, 
+machine, enigma" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Mechanical computers" [fillcolor="#d6ebf2"]
 	"Mechanical computers" [label="Mechanical computers
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+norden, computer, system, 
+bombsight, target" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Electronic calculators" [fillcolor="#d6ebf2"]
 	"Electronic calculators" [label="Electronic calculators
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
-	"Electromechanical calculators" [fillcolor="#d6ebf2"]
-	"Electromechanical calculators" [label="Electromechanical 
-calculators
-
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+calculator, anita, 
+company, electronic, 
+mechanical" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Lists of microprocessors" [fillcolor="#d6ebf2"]
 	"Lists of microprocessors" [label="Lists of microprocessors
 
-Topic 1, Topic 2, Topic 3, 
-Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
+core, processor, pentium, 
+amd, intel" color=black fixedsize=true fontname="Arial Bold" fontsize=10.666666666666666 penwidth=2.0 shape=circle style=filled width=2.208333333333333]
 	"Computer hardware" -> "Computer hardware companies"
-	"Computer hardware" -> "Benchmarks (computing)"
+	"Computer hardware" -> "Benchmarks computing"
 	"Computer hardware" -> "Computer hardware stubs"
 	"Computer hardware" -> "Classes of computers"
 	"Computer hardware" -> "Computer hardware logos"
@@ -894,7 +885,7 @@ Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.6
 	"Computer hardware companies" -> "Defunct computer hardware companies"
 	"Computer hardware companies" -> "Fabless semiconductor companies"
 	"Computer hardware companies" -> "Mihajlo Pupin Institute"
-	"Computer hardware companies" -> "EI NiÅ¡"
+	"Computer hardware companies" -> "EI NiÅ"
 	"Computer hardware companies" -> "Networking hardware companies"
 	"Computer hardware companies" -> "Computer storage companies"
 	"Computer hardware companies" -> "Computer enclosure companies"
@@ -911,7 +902,7 @@ Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.6
 	"Computer hardware companies" -> Teradata
 	"Computer hardware companies" -> "Netbook manufacturers"
 	"Computer hardware companies" -> "Computer power supply unit manufacturers"
-	"Computer hardware companies" -> "Acer Inc."
+	"Computer hardware companies" -> "Acer Inc"
 	"Computer hardware companies" -> Vaio
 	"Computer hardware companies" -> Cray
 	"Computer hardware companies" -> MediaTek
@@ -938,7 +929,7 @@ Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.6
 	"Classes of computers" -> "Mobile computers"
 	"Classes of computers" -> "Massively parallel computers"
 	"Classes of computers" -> "Fault-tolerant computer systems"
-	"Classes of computers" -> "Servers (computing)"
+	"Classes of computers" -> "Servers computing"
 	"Classes of computers" -> "Human computers"
 	"Classes of computers" -> "Classes of mobile computers"
 	"Classes of computers" -> "Ternary computers"
@@ -982,7 +973,7 @@ Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.6
 	"Computer hardware by company" -> "Sun Microsystems hardware"
 	"Computer hardware by company" -> "Sony hardware"
 	"Computer hardware by company" -> "Advanced Micro Devices products"
-	"Computer hardware by company" -> "Apple Inc. hardware"
+	"Computer hardware by company" -> "Apple Inc hardware"
 	"Computer hardware by company" -> "Parallax products"
 	"Computer hardware by company" -> "Dell hardware"
 	"Computer hardware by company" -> "Scientific Data Systems computers"
@@ -1010,9 +1001,9 @@ Topic 4, Topic 5" color=black fixedsize=true fontname="Arial Bold" fontsize=10.6
 	"Computer hardware by company" -> "Microchip Technology hardware"
 	"Computer hardware by company" -> "Nvidia products"
 	"Computer hardware by company" -> "Xerox computers"
-	"Computer hardware by company" -> "AT&T computers"
-	"Computer hardware by company" -> "Ministry of the Electronics Industry (USSR) computers"
-	"Computer hardware by company" -> "Ministry of Radio Industry (USSR) computers"
+	"Computer hardware by company" -> "ATT computers"
+	"Computer hardware by company" -> "Ministry of the Electronics Industry USSR computers"
+	"Computer hardware by company" -> "Ministry of Radio Industry USSR computers"
 	"Computer hardware by company" -> "Google hardware"
 	"Computer hardware by company" -> "Amazon hardware"
 	"Lists of computer hardware" -> "Lists of microprocessors"
