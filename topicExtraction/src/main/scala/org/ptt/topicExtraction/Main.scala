@@ -16,7 +16,7 @@ object Main {
 
   val InputLocation = "src/main/resources/in/"
   val OutputLocation = "src/main/resources/out/"
-  val ArticleLocation = InputLocation + "AA/wiki_00.json"
+  val ArticleLocation = InputLocation + "AA/wiki_00"
   val ArticleIDLocation = InputLocation + "category_to_articleids-d1.json"
   val CatResult: mutable.HashMap[String, DataFrame] = mutable.HashMap.empty[String, DataFrame]
   val TopicDistributionLDA: mutable.HashMap[String, DataFrame] = mutable.HashMap.empty[String, DataFrame]
