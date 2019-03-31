@@ -14,7 +14,9 @@ categorylinks.json and category_to_depth.json, placed in:
 
 Output from topicExtraction:
 > TopicExtraction\topicExtraction\src\main\resources\out\nouns\
+
 and
+
 > TopicExtraction\topicExtraction\src\main\resources\out\lda\
 
 ## Usage
