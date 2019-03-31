@@ -3,11 +3,9 @@ package org.ptt.topicExtraction
 
 import java.io.File
 
-import breeze.numerics.{pow, sqrt}
 import org.apache.commons.io.FileUtils
-import org.apache.spark.ml.PipelineStage
-import org.apache.spark.sql.{DataFrame, SparkSession, functions}
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
+import org.apache.spark.sql.{DataFrame, SparkSession, functions}
 
 import scala.collection.mutable
 
@@ -99,6 +97,7 @@ object Main {
       val tempDF = preprocessed.filter($"id".isin(articleIDs: _*))
 
       if (!tempDF.head(1).isEmpty) {
+        tempDF.select("filtered").show(100)
         val (lda, cVector) = LDAPipeline.applyLDA(tempDF)
         CatResult += (cat -> lda)
         TopicDistributionLDA += (cat -> cVector)
@@ -125,8 +124,8 @@ object Main {
       .builder
       .master("local[8]")
       .appName("Domain Exploration")
-      .config("spark.eventLog.enabled", "true")
-      .config("spark.eventLog.dir", "src/main/resources/out/log/")
+      //.config("spark.eventLog.enabled", "true")
+      //.config("spark.eventLog.dir", "src/main/resources/out/log/")
       .getOrCreate()
 
 
@@ -140,8 +139,8 @@ object Main {
     // Category: ArticleIDs
     val catArticleIDs = spark.read.json(ArticleIDLocation).cache()
 
-    countNouns(catTest, catArticleIDs, spark)
-    runLDA(catTest, catArticleIDs, spark)
+    //countNouns(articlesDF, catArticleIDs, spark)
+    runLDA(articlesDF, catArticleIDs, spark)
 
 
     spark.close()

@@ -2,8 +2,8 @@ package org.ptt.topicExtraction
 
 import java.util.Locale
 
+import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.feature.{RegexTokenizer, StopWordsRemover}
-import org.apache.spark.ml.{Pipeline, PipelineModel, PipelineStage}
 import org.apache.spark.sql.DataFrame
 import org.ptt.topicExtraction.transformers.Lemmatizer
 

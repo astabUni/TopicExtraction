@@ -7,7 +7,7 @@ import org.apache.spark.ml.util.{DefaultParamsReadable, DefaultParamsWritable, I
 import org.apache.spark.sql.types.{ArrayType, DataType, StringType}
 
 import scala.collection.JavaConverters._
-import scala.collection.{Seq, mutable}
+import scala.collection.Seq
 
 
 

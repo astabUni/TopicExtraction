@@ -2,6 +2,7 @@
 
 ## Prerequisites
 
+* Java 1.8
 * Scala IDE (IntelliJ IDEA or Eclipse with Scala plugin)
 
 
