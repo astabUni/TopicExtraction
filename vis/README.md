@@ -6,6 +6,16 @@
 * MatplotLib
 * graphviz
 
+## Required files
+
+Generated files from dataRetrieval:
+categorylinks.json and category_to_depth.json, placed in:
+> TopicExtraction\topicExtraction\src\main\resources\in
+
+Output from topicExtraction:
+> TopicExtraction\topicExtraction\src\main\resources\out\nouns\
+and
+> TopicExtraction\topicExtraction\src\main\resources\out\lda\
 
 ## Usage
 
