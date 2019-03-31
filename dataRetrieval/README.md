@@ -44,6 +44,7 @@ Afterwards run WikiExtractor with the output from dataRetrieval.py as input (cho
 For example:
 > python wikiextractor\WikiExtractor.py output\Computer_hardware-d5\Computer_hardware_articles-d5.xml.bz2 -o output/Computer_hardware-d5 -b 5G --json
 
+To continue with step 2 (topicExtraction) move the generated files from dataRetrieval/output to TopicExtraction\topicExtraction\src\main\resources\in
 
 Hint:
 Extracting articles from the full wikimedia article dump takes a while. If you want to extract articles for the same category but limited to a smaller MAXDEPTH faster it is possible
