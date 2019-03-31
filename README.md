@@ -1,14 +1,9 @@
-# TopicExtraction
+# Topic Extraction
 
-TopicExtraction creates an overview of topics to a given category of wikipedia articles.
+## Installation
 
+Follow the instructions in the respective folders in this order:
 
-
-# Setup
-
-## Prerequisites
-
-
-
-
-## How to Build
+1. dataRetrieval: Fetch articles from the wikimedia article dump
+2. topicExtraction: Extract nouns, topics and topic distributions from aforementioned articles
+3. vis: Analyse extracted data and visualise results

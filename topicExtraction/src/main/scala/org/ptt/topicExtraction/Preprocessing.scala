@@ -15,7 +15,7 @@ object Preprocessing {
     val regexTokenizer = new RegexTokenizer()
       .setInputCol("text")
       .setOutputCol("tokens")
-      .setMinTokenLength(2)
+      .setMinTokenLength(3)
       .setPattern("\\W")
       .setToLowercase(if (swInputCol.matches("posTags")) false else true)
 

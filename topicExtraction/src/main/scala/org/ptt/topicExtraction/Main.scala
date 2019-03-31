@@ -25,7 +25,7 @@ object Main {
     FileUtils.deleteDirectory(new File(OutputLocation + path))
 
     for ((cat, df) <- CatResult) {
-      df.write
+      df.coalesce(1).write.mode("append")
         .option("header", "true")
         .option("inferSchema", "true")
         .json(OutputLocation + path + cat)
@@ -33,7 +33,7 @@ object Main {
 
     if (path.matches("lda/")) {
       for ((cat, df) <- TopicDistributionLDA) {
-        df.write
+        df.coalesce(1).write.mode("append")
           .option("header", "true")
           .option("inferSchema", "true")
           .json(OutputLocation + path + cat + "/topicDistribution")
@@ -128,8 +128,8 @@ object Main {
     // Category: ArticleIDs
     val catArticleIDs = spark.read.json(InputLocation + "d2/Computer_hardware_category_to_articleids-d2.json").cache()
 
-    countNouns(catTest, catArticleIDs, spark)
-    runLDA(catTest, catArticleIDs, spark)
+    countNouns(articlesDF, catArticleIDs, spark)
+    runLDA(articlesDF, catArticleIDs, spark)
 
 
     spark.close()
